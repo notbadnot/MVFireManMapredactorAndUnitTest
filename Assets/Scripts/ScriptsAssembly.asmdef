@@ -1,0 +1,16 @@
+{
+    "name": "ScriptsAssembly",
+    "rootNamespace": "",
+    "references": [
+        "GUID:2b03f488d2efaf746977d1af04c337c2"
+    ],
+    "includePlatforms": [],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": [],
+    "noEngineReferences": false
+}
