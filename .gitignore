@@ -6,7 +6,6 @@
 /[Mm]emory[Cc]aptures/
 /[Uu]ser[Ss]ettings/
 
-!/[Aa]ssets/**/*.meta
 # /[Aa]ssets/AssetStoreTools*
 /[Aa]ssets/Plugins/Editor/JetBrains*
 .vs/
@@ -29,11 +28,10 @@ ExportedObj/
 *.opendb
 *.VC.db
 
-*.pidb.meta
-*.pdb.meta
-*.mdb.meta
 
 sysinfo.txt
 
 *.apk
 *.unitypackage
+
+Debug/
