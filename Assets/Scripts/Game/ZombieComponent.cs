@@ -50,19 +50,13 @@ namespace Game
 
                 var (moveDirection, viewDirection, shoot) = PlayerInput.CurrentInput();
 
-                //Debug.Log(moveDirection.normalized);
 
-
-                Debug.Log(moveDirection.normalized);
 
                 _rigidbody.velocity = moveDirection.normalized * _speed;
                 transform.rotation = viewDirection;
             }
             else
             {
-
-
-
 
                 if (_deltaPath == null || _deltaPath.Length < 2)
                     return;

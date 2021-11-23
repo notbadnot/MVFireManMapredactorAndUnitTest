@@ -24,7 +24,6 @@ public class Vision : MonoBehaviour
         boxCollider.center = new Vector3(maxVisionDistance / 2, 1, -maxVisionDistance /2);
         boxCollider.size = new Vector3(maxVisionDistance, 1, +maxVisionDistance);
         hypoOfMaxVisionDistance = Mathf.Sqrt(2) * maxVisionDistance;
-        Debug.Log(gameObject);
         gameObject.transform.localRotation = new Quaternion(0, 90, 0, 0);
     }
 
@@ -133,11 +132,6 @@ public class Vision : MonoBehaviour
 
 
 
-    /*private void OnTriggerEnter(Collider other)
-    {
-        GameObject another = other.gameObject;
-        Debug.DrawRay(gameObject.transform.position, another.transform.position - gameObject.transform.position, Color.red, 1f);
-    }*/
 
 
 }

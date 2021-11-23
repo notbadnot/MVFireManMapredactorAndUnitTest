@@ -9,7 +9,6 @@ public class ZombieBotfromAstarBot : PlayerInput
 {
     [SerializeField] public LevelMap _levelMap;
     [SerializeField] private Transform _zombie;
-    [SerializeField] private GameObject pointerprefab;
 
     private int[,] _map;
     private int _deltaX;
@@ -49,7 +48,6 @@ public class ZombieBotfromAstarBot : PlayerInput
                 Physics.Raycast(currenPointToGo + Vector3.up * 1, currenPointToGo, out hitmirrored, 100000f, 128);
 
             }
-            Instantiate(pointerprefab, targetPosition, Quaternion.identity);
         }
 
         targetPosition = currenPointToGo;

@@ -13,8 +13,8 @@ public class TestForBot
     [UnityTest]
     public IEnumerator TestForBotGoesRightIfPointToGoOnTheStraightRightOfHim()
     {
-        GameObject levelForTest = MonoBehaviour.Instantiate(Resources.Load<GameObject>("Prefabs/LevelForTest"));
-        GameObject zombieForTest = MonoBehaviour.Instantiate(Resources.Load<GameObject>("Prefabs/ZombieForTest"));
+        GameObject levelForTest = MonoBehaviour.Instantiate(Resources.Load<GameObject>("Prefabs/PrefabsForTesting/LevelForTest"));
+        GameObject zombieForTest = MonoBehaviour.Instantiate(Resources.Load<GameObject>("Prefabs/PrefabsForTesting/ZombieForTest"));
 
         levelForTest.transform.position = new Vector3(0, 0, 0);
         zombieForTest.transform.position = new Vector3(0, 0, 1);
@@ -41,8 +41,8 @@ public class TestForBot
     [UnityTest]
     public IEnumerator TestForBotGoesLeftIfPointInFrontOfHimButHeCanGoToThatPointThroughLeft()
     {
-        GameObject levelForTest = MonoBehaviour.Instantiate(Resources.Load<GameObject>("Prefabs/LevelForTest"));
-        GameObject zombieForTest = MonoBehaviour.Instantiate(Resources.Load<GameObject>("Prefabs/ZombieForTest"));
+        GameObject levelForTest = MonoBehaviour.Instantiate(Resources.Load<GameObject>("Prefabs/PrefabsForTesting/LevelForTest"));
+        GameObject zombieForTest = MonoBehaviour.Instantiate(Resources.Load<GameObject>("Prefabs/PrefabsForTesting/ZombieForTest"));
 
         levelForTest.transform.position = new Vector3(0, 0, 0);
         zombieForTest.transform.position = new Vector3(0, 0, 1);
